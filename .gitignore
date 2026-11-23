@@ -1,0 +1,19 @@
+# Локальное окружение и настройки PyCharm
+.venv/
+venv/
+.idea/
+__pycache__/
+*.py[cod]
+
+# Локальный экземпляр Gruyere содержит секрет и пользовательскую базу
+gruyere/
+secret.txt
+stored-data.txt
+
+# По умолчанию записи и отчёты могут содержать действующие сессионные данные
+*.pcap
+*.pcapng
+*.report.html
+!/DZ8.pcap
+!/evidence/Вражевских_Михаил_ДЗ8_обезличено.pcap
+!/evidence/Вражевских_Михаил_ДЗ8_обезличено.report.html

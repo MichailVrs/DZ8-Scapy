@@ -1,0 +1,940 @@
+<!doctype html><html lang="ru"><meta charset="utf-8">
+    <title>Разбор HTTP</title>
+    <style>body{max-width:84ch;margin:2rem auto;padding:0 1rem;font:16px system-ui}
+    pre{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.6}</style>
+    <h1>Разбор HTTP</h1><p>Вражевских_Михаил_ДЗ8_обезличено.pcap · порт 8008</p>
+    <pre>Запрос   127.0.0.1:54284 → 127.0.0.1:8008
+GET /000000000000000000000000000000000000000/newsnippet.gtl HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+Connection: keep-alive
+Cookie: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Host: 127.0.0.1:8008
+Referer: http://127.0.0.1:8008/000000000000000000000000000000000000000/
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+Priority: u=0, i
+Параметры URL: нет
+Тело пустое.
+
+Ответ   127.0.0.1:8008 → 127.0.0.1:54284
+HTTP/1.0 200 OK
+Content-Type: text/html
+Date: Mon, 23 Nov 2026 16:07:49 GMT
+Pragma: no-cache
+Server: BaseHTTP/0.3 Python/2.7.18
+X-XSS-Protection: 0
+Тело: &lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;&gt;
+&lt;!-- Copyright 2017 Google Inc. --&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Gruyere: New Snippet&lt;/title&gt;
+&lt;style&gt;
+/* Copyright 2017 Google Inc. */
+
+body, html, td, span, div, input, textarea {
+  font-family: sans-serif;
+  font-size: 14pt;
+}
+
+body {
+  background: url(&#x27;cheese.png&#x27;) top center repeat;
+  text-align: center;
+  opacity: 0.80;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30pt;
+  font-weight: bold;
+}
+
+td {
+  vertical-align: top;
+  padding: 5px;
+}
+
+a, a:hover {
+  text-decoration: underline;
+  color: #0000bb;
+}
+
+a:visited {
+  color: #bb0000;
+}
+
+a.button:visited {
+  color: #0000bb;
+}
+
+.content {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  background: #ffffcc;
+  padding: 20px;
+  border: 3px solid #ffb149;
+}
+
+.menu {
+  text-align: left;
+  padding: 10px 20px 35px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 90%;
+  background: #ffffcc;
+  border: 3px solid #ffb149;
+}
+
+.menu-user {
+  color: #000000;
+  font-weight: bold;
+}
+
+#menu-left {
+  float: left;
+}
+
+#menu-left a, #menu-left a:hover, #menu-left a:visited {
+  color: #000000;
+}
+
+#menu-right {
+  float: right;
+}
+
+#menu-right a, #menu-right a:hover, #menu-right a:visited {
+  color: #000000;
+}
+
+.message {
+  width: 50%;
+  color: #ff0000;
+  background: #ffdddd;
+  border: 2px solid #ff0000;
+  border-radius: 1em;
+  -moz-border-radius: 1em;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  background-color: #ffffff;
+}
+
+.refresh {
+  float: center;
+  width: 90%;
+  text-align: right;
+  margin: auto;
+  padding-top: 0;
+  padding-bottom: 2pt;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.h2-with-refresh {
+  margin-bottom: 0;
+}
+
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;div class=&#x27;menu&#x27;&gt;
+  &lt;span id=&#x27;menu-left&#x27;&gt;
+    &lt;a href=&#x27;/000000000000000000000000000000000000000/&#x27;&gt;Home&lt;/a&gt;
+      
+      | &lt;a href=&#x27;/000000000000000000000000000000000000000/snippets.gtl&#x27;&gt;My&amp;nbsp;Snippets&lt;/a&gt;
+      | &lt;a href=&#x27;/000000000000000000000000000000000000000/newsnippet.gtl&#x27;&gt;New&amp;nbsp;Snippet&lt;/a&gt;
+      | &lt;a href=&#x27;/000000000000000000000000000000000000000/upload.gtl&#x27;&gt;Upload&lt;/a&gt;
+      
+  &lt;/span&gt;
+  &lt;span id=&#x27;menu-right&#x27;&gt;
+      
+      &lt;span class=&#x27;menu-user&#x27;&gt;
+        Student &amp;lt;Student&amp;gt;
+      &lt;/span&gt;
+      
+      | &lt;a href=&#x27;/000000000000000000000000000000000000000/editprofile.gtl&#x27;&gt;Profile&lt;/a&gt;
+      | &lt;a href=&#x27;/000000000000000000000000000000000000000/logout&#x27;&gt;Sign out&lt;/a&gt;
+      
+      
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Gruyere: New Snippet&lt;/h2&gt;
+
+&lt;div class=&#x27;content&#x27;&gt;
+&lt;h3&gt;Add a new snippet.&lt;/h3&gt;
+
+
+
+&lt;div style=&#x27;width:600&#x27;&gt;
+&lt;form method=&#x27;get&#x27; action=&#x27;/000000000000000000000000000000000000000/newsnippet2&#x27;&gt;
+&lt;textarea name=&#x27;snippet&#x27; rows=&#x27;5&#x27; style=&#x27;width:100%&#x27;&gt;&lt;/textarea&gt;
+&lt;br&gt;
+&lt;table summary=&#x27;&#x27; style=&#x27;width:100%&#x27;&gt;
+&lt;tr&gt;
+&lt;td align=&#x27;left&#x27; valign=&#x27;top&#x27;&gt;
+  &lt;i&gt;Limited HTML is now supported in snippets (e.g., &amp;lt;b&amp;gt;, &amp;lt;i&amp;gt;,
+  etc.)!&lt;/i&gt;
+&lt;/td&gt;
+&lt;td align=&#x27;right&#x27; valign=&#x27;top&#x27;&gt;
+  &lt;input type=&#x27;submit&#x27; value=&#x27;Submit&#x27;&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+
+
+Запрос   127.0.0.1:54285 → 127.0.0.1:8008
+GET /000000000000000000000000000000000000000/newsnippet2?snippet=HW8-BASE HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+Connection: keep-alive
+Cookie: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Host: 127.0.0.1:8008
+Referer: http://127.0.0.1:8008/000000000000000000000000000000000000000/newsnippet.gtl
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+Priority: u=0, i
+Параметры URL: snippet = HW8-BASE
+Тело пустое.
+
+Ответ   127.0.0.1:8008 → 127.0.0.1:54285
+HTTP/1.0 302 Found
+Content-Type: text/html
+Date: Mon, 23 Nov 2026 16:07:57 GMT
+Location: /000000000000000000000000000000000000000/snippets.gtl
+Pragma: no-cache
+Server: BaseHTTP/0.3 Python/2.7.18
+X-XSS-Protection: 0
+Тело: &lt;!DOCTYPE HTML PUBLIC &#x27;-//W3C//DTD HTML//EN&#x27;&gt;
+        &lt;html&gt;&lt;body&gt;
+        &lt;title&gt;302 Redirect&lt;/title&gt;
+        Redirected &lt;a href=&quot;/000000000000000000000000000000000000000/snippets.gtl&quot;&gt;here&lt;/a&gt;
+        &lt;/body&gt;&lt;/html&gt;
+
+Запрос   127.0.0.1:54286 → 127.0.0.1:8008
+GET /000000000000000000000000000000000000000/snippets.gtl HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+Connection: keep-alive
+Cookie: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Host: 127.0.0.1:8008
+Referer: http://127.0.0.1:8008/000000000000000000000000000000000000000/newsnippet.gtl
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+Priority: u=0, i
+Параметры URL: нет
+Тело пустое.
+
+Ответ   127.0.0.1:8008 → 127.0.0.1:54286
+HTTP/1.0 200 OK
+Content-Type: text/html
+Date: Mon, 23 Nov 2026 16:07:57 GMT
+Pragma: no-cache
+Server: BaseHTTP/0.3 Python/2.7.18
+X-XSS-Protection: 0
+Тело: &lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;&gt;
+&lt;!-- Copyright 2017 Google Inc. --&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Gruyere: Snippets&lt;/title&gt;
+&lt;style&gt;
+/* Copyright 2017 Google Inc. */
+
+body, html, td, span, div, input, textarea {
+  font-family: sans-serif;
+  font-size: 14pt;
+}
+
+body {
+  background: url(&#x27;cheese.png&#x27;) top center repeat;
+  text-align: center;
+  opacity: 0.80;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30pt;
+  font-weight: bold;
+}
+
+td {
+  vertical-align: top;
+  padding: 5px;
+}
+
+a, a:hover {
+  text-decoration: underline;
+  color: #0000bb;
+}
+
+a:visited {
+  color: #bb0000;
+}
+
+a.button:visited {
+  color: #0000bb;
+}
+
+.content {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  background: #ffffcc;
+  padding: 20px;
+  border: 3px solid #ffb149;
+}
+
+.menu {
+  text-align: left;
+  padding: 10px 20px 35px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 90%;
+  background: #ffffcc;
+  border: 3px solid #ffb149;
+}
+
+.menu-user {
+  color: #000000;
+  font-weight: bold;
+}
+
+#menu-left {
+  float: left;
+}
+
+#menu-left a, #menu-left a:hover, #menu-left a:visited {
+  color: #000000;
+}
+
+#menu-right {
+  float: right;
+}
+
+#menu-right a, #menu-right a:hover, #menu-right a:visited {
+  color: #000000;
+}
+
+.message {
+  width: 50%;
+  color: #ff0000;
+  background: #ffdddd;
+  border: 2px solid #ff0000;
+  border-radius: 1em;
+  -moz-border-radius: 1em;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  background-color: #ffffff;
+}
+
+.refresh {
+  float: center;
+  width: 90%;
+  text-align: right;
+  margin: auto;
+  padding-top: 0;
+  padding-bottom: 2pt;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.h2-with-refresh {
+  margin-bottom: 0;
+}
+
+&lt;/style&gt;
+
+&lt;script src=&quot;/000000000000000000000000000000000000000/lib.js&quot; text=&quot;text/javascript&quot;&gt;
+&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+
+&lt;div class=&#x27;menu&#x27;&gt;
+  &lt;span id=&#x27;menu-left&#x27;&gt;
+    &lt;a href=&#x27;/000000000000000000000000000000000000000/&#x27;&gt;Home&lt;/a&gt;
+      
+      | &lt;a href=&#x27;/000000000000000000000000000000000000000/snippets.gtl&#x27;&gt;My&amp;nbsp;Snippets&lt;/a&gt;
+      | &lt;a href=&#x27;/000000000000000000000000000000000000000/newsnippet.gtl&#x27;&gt;New&amp;nbsp;Snippet&lt;/a&gt;
+      | &lt;a href=&#x27;/000000000000000000000000000000000000000/upload.gtl&#x27;&gt;Upload&lt;/a&gt;
+      
+  &lt;/span&gt;
+  &lt;span id=&#x27;menu-right&#x27;&gt;
+      
+      &lt;span class=&#x27;menu-user&#x27;&gt;
+        Student &amp;lt;Student&amp;gt;
+      &lt;/span&gt;
+      
+      | &lt;a href=&#x27;/000000000000000000000000000000000000000/editprofile.gtl&#x27;&gt;Profile&lt;/a&gt;
+      | &lt;a href=&#x27;/000000000000000000000000000000000000000/logout&#x27;&gt;Sign out&lt;/a&gt;
+      
+      
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;h2 class=&#x27;has-refresh&#x27; id=&quot;user_name&quot;&gt;
+
+
+  My Snippets
+  
+
+&lt;/h2&gt;
+&lt;div class=&#x27;refresh&#x27;&gt;&lt;a class=&#x27;button&#x27;
+  onclick=&#x27;_refreshSnippets(&quot;000000000000000000000000000000000000000&quot;, &quot;Student&quot;)&#x27;
+  href=&#x27;#&#x27;&gt;Refresh&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&#x27;content&#x27;&gt;
+
+
+
+
+  
+  
+    
+    
+      &lt;br&gt;
+      &lt;table&gt;
+        &lt;tr&gt;&lt;td colspan=&#x27;2&#x27;&gt;&lt;b&gt;All snippets:&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
+        
+          &lt;tr&gt;
+            &lt;td valign=&#x27;top&#x27;&gt;
+              &lt;script&gt;document.write(0 + 1)&lt;/script&gt;&amp;nbsp;&amp;nbsp;
+            &lt;/td&gt;
+            &lt;td valign=&#x27;top&#x27;&gt;
+              &lt;a href=&#x27;/000000000000000000000000000000000000000/deletesnippet?index=0&#x27;&gt;[X]&lt;/a&gt;&amp;nbsp;
+            &lt;/td&gt;
+            &lt;td valign=&#x27;top&#x27;&gt;
+              &lt;div id=&#x27;0&#x27;&gt;
+                HW8-BASE
+              &lt;/div&gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+        
+      &lt;/table&gt;
+    
+  
+  &lt;br&gt;
+  &lt;a href=&#x27;&#x27;&gt;My site&lt;/a&gt;
+
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+Запрос   127.0.0.1:54287 → 127.0.0.1:8008
+GET /000000000000000000000000000000000000000/newsnippet.gtl HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+Connection: keep-alive
+Cookie: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Host: 127.0.0.1:8008
+Referer: http://127.0.0.1:8008/000000000000000000000000000000000000000/snippets.gtl
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+Priority: u=0, i
+Параметры URL: нет
+Тело пустое.
+
+Ответ   127.0.0.1:8008 → 127.0.0.1:54287
+HTTP/1.0 200 OK
+Content-Type: text/html
+Date: Mon, 23 Nov 2026 16:08:00 GMT
+Pragma: no-cache
+Server: BaseHTTP/0.3 Python/2.7.18
+X-XSS-Protection: 0
+Тело: &lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;&gt;
+&lt;!-- Copyright 2017 Google Inc. --&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Gruyere: New Snippet&lt;/title&gt;
+&lt;style&gt;
+/* Copyright 2017 Google Inc. */
+
+body, html, td, span, div, input, textarea {
+  font-family: sans-serif;
+  font-size: 14pt;
+}
+
+body {
+  background: url(&#x27;cheese.png&#x27;) top center repeat;
+  text-align: center;
+  opacity: 0.80;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30pt;
+  font-weight: bold;
+}
+
+td {
+  vertical-align: top;
+  padding: 5px;
+}
+
+a, a:hover {
+  text-decoration: underline;
+  color: #0000bb;
+}
+
+a:visited {
+  color: #bb0000;
+}
+
+a.button:visited {
+  color: #0000bb;
+}
+
+.content {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  background: #ffffcc;
+  padding: 20px;
+  border: 3px solid #ffb149;
+}
+
+.menu {
+  text-align: left;
+  padding: 10px 20px 35px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 90%;
+  background: #ffffcc;
+  border: 3px solid #ffb149;
+}
+
+.menu-user {
+  color: #000000;
+  font-weight: bold;
+}
+
+#menu-left {
+  float: left;
+}
+
+#menu-left a, #menu-left a:hover, #menu-left a:visited {
+  color: #000000;
+}
+
+#menu-right {
+  float: right;
+}
+
+#menu-right a, #menu-right a:hover, #menu-right a:visited {
+  color: #000000;
+}
+
+.message {
+  width: 50%;
+  color: #ff0000;
+  background: #ffdddd;
+  border: 2px solid #ff0000;
+  border-radius: 1em;
+  -moz-border-radius: 1em;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  background-color: #ffffff;
+}
+
+.refresh {
+  float: center;
+  width: 90%;
+  text-align: right;
+  margin: auto;
+  padding-top: 0;
+  padding-bottom: 2pt;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.h2-with-refresh {
+  margin-bottom: 0;
+}
+
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;div class=&#x27;menu&#x27;&gt;
+  &lt;span id=&#x27;menu-left&#x27;&gt;
+    &lt;a href=&#x27;/000000000000000000000000000000000000000/&#x27;&gt;Home&lt;/a&gt;
+      
+      | &lt;a href=&#x27;/000000000000000000000000000000000000000/snippets.gtl&#x27;&gt;My&amp;nbsp;Snippets&lt;/a&gt;
+      | &lt;a href=&#x27;/000000000000000000000000000000000000000/newsnippet.gtl&#x27;&gt;New&amp;nbsp;Snippet&lt;/a&gt;
+      | &lt;a href=&#x27;/000000000000000000000000000000000000000/upload.gtl&#x27;&gt;Upload&lt;/a&gt;
+      
+  &lt;/span&gt;
+  &lt;span id=&#x27;menu-right&#x27;&gt;
+      
+      &lt;span class=&#x27;menu-user&#x27;&gt;
+        Student &amp;lt;Student&amp;gt;
+      &lt;/span&gt;
+      
+      | &lt;a href=&#x27;/000000000000000000000000000000000000000/editprofile.gtl&#x27;&gt;Profile&lt;/a&gt;
+      | &lt;a href=&#x27;/000000000000000000000000000000000000000/logout&#x27;&gt;Sign out&lt;/a&gt;
+      
+      
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Gruyere: New Snippet&lt;/h2&gt;
+
+&lt;div class=&#x27;content&#x27;&gt;
+&lt;h3&gt;Add a new snippet.&lt;/h3&gt;
+
+
+
+&lt;div style=&#x27;width:600&#x27;&gt;
+&lt;form method=&#x27;get&#x27; action=&#x27;/000000000000000000000000000000000000000/newsnippet2&#x27;&gt;
+&lt;textarea name=&#x27;snippet&#x27; rows=&#x27;5&#x27; style=&#x27;width:100%&#x27;&gt;&lt;/textarea&gt;
+&lt;br&gt;
+&lt;table summary=&#x27;&#x27; style=&#x27;width:100%&#x27;&gt;
+&lt;tr&gt;
+&lt;td align=&#x27;left&#x27; valign=&#x27;top&#x27;&gt;
+  &lt;i&gt;Limited HTML is now supported in snippets (e.g., &amp;lt;b&amp;gt;, &amp;lt;i&amp;gt;,
+  etc.)!&lt;/i&gt;
+&lt;/td&gt;
+&lt;td align=&#x27;right&#x27; valign=&#x27;top&#x27;&gt;
+  &lt;input type=&#x27;submit&#x27; value=&#x27;Submit&#x27;&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+
+
+Запрос   127.0.0.1:54290 → 127.0.0.1:8008
+GET /000000000000000000000000000000000000000/newsnippet2?snippet=HW8-CHECK HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+Connection: keep-alive
+Cookie: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Host: 127.0.0.1:8008
+Referer: http://127.0.0.1:8008/000000000000000000000000000000000000000/newsnippet.gtl
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+Priority: u=0, i
+Параметры URL: snippet = HW8-CHECK
+Тело пустое.
+
+Ответ   127.0.0.1:8008 → 127.0.0.1:54290
+HTTP/1.0 302 Found
+Content-Type: text/html
+Date: Mon, 23 Nov 2026 16:08:09 GMT
+Location: /000000000000000000000000000000000000000/snippets.gtl
+Pragma: no-cache
+Server: BaseHTTP/0.3 Python/2.7.18
+X-XSS-Protection: 0
+Тело: &lt;!DOCTYPE HTML PUBLIC &#x27;-//W3C//DTD HTML//EN&#x27;&gt;
+        &lt;html&gt;&lt;body&gt;
+        &lt;title&gt;302 Redirect&lt;/title&gt;
+        Redirected &lt;a href=&quot;/000000000000000000000000000000000000000/snippets.gtl&quot;&gt;here&lt;/a&gt;
+        &lt;/body&gt;&lt;/html&gt;
+
+Запрос   127.0.0.1:54291 → 127.0.0.1:8008
+GET /000000000000000000000000000000000000000/snippets.gtl HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+Connection: keep-alive
+Cookie: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Host: 127.0.0.1:8008
+Referer: http://127.0.0.1:8008/000000000000000000000000000000000000000/newsnippet.gtl
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+Priority: u=0, i
+Параметры URL: нет
+Тело пустое.
+
+Ответ   127.0.0.1:8008 → 127.0.0.1:54291
+HTTP/1.0 200 OK
+Content-Type: text/html
+Date: Mon, 23 Nov 2026 16:08:09 GMT
+Pragma: no-cache
+Server: BaseHTTP/0.3 Python/2.7.18
+X-XSS-Protection: 0
+Тело: &lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;&gt;
+&lt;!-- Copyright 2017 Google Inc. --&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Gruyere: Snippets&lt;/title&gt;
+&lt;style&gt;
+/* Copyright 2017 Google Inc. */
+
+body, html, td, span, div, input, textarea {
+  font-family: sans-serif;
+  font-size: 14pt;
+}
+
+body {
+  background: url(&#x27;cheese.png&#x27;) top center repeat;
+  text-align: center;
+  opacity: 0.80;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30pt;
+  font-weight: bold;
+}
+
+td {
+  vertical-align: top;
+  padding: 5px;
+}
+
+a, a:hover {
+  text-decoration: underline;
+  color: #0000bb;
+}
+
+a:visited {
+  color: #bb0000;
+}
+
+a.button:visited {
+  color: #0000bb;
+}
+
+.content {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  background: #ffffcc;
+  padding: 20px;
+  border: 3px solid #ffb149;
+}
+
+.menu {
+  text-align: left;
+  padding: 10px 20px 35px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 90%;
+  background: #ffffcc;
+  border: 3px solid #ffb149;
+}
+
+.menu-user {
+  color: #000000;
+  font-weight: bold;
+}
+
+#menu-left {
+  float: left;
+}
+
+#menu-left a, #menu-left a:hover, #menu-left a:visited {
+  color: #000000;
+}
+
+#menu-right {
+  float: right;
+}
+
+#menu-right a, #menu-right a:hover, #menu-right a:visited {
+  color: #000000;
+}
+
+.message {
+  width: 50%;
+  color: #ff0000;
+  background: #ffdddd;
+  border: 2px solid #ff0000;
+  border-radius: 1em;
+  -moz-border-radius: 1em;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  background-color: #ffffff;
+}
+
+.refresh {
+  float: center;
+  width: 90%;
+  text-align: right;
+  margin: auto;
+  padding-top: 0;
+  padding-bottom: 2pt;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.h2-with-refresh {
+  margin-bottom: 0;
+}
+
+&lt;/style&gt;
+
+&lt;script src=&quot;/000000000000000000000000000000000000000/lib.js&quot; text=&quot;text/javascript&quot;&gt;
+&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+
+&lt;div class=&#x27;menu&#x27;&gt;
+  &lt;span id=&#x27;menu-left&#x27;&gt;
+    &lt;a href=&#x27;/000000000000000000000000000000000000000/&#x27;&gt;Home&lt;/a&gt;
+      
+      | &lt;a href=&#x27;/000000000000000000000000000000000000000/snippets.gtl&#x27;&gt;My&amp;nbsp;Snippets&lt;/a&gt;
+      | &lt;a href=&#x27;/000000000000000000000000000000000000000/newsnippet.gtl&#x27;&gt;New&amp;nbsp;Snippet&lt;/a&gt;
+      | &lt;a href=&#x27;/000000000000000000000000000000000000000/upload.gtl&#x27;&gt;Upload&lt;/a&gt;
+      
+  &lt;/span&gt;
+  &lt;span id=&#x27;menu-right&#x27;&gt;
+      
+      &lt;span class=&#x27;menu-user&#x27;&gt;
+        Student &amp;lt;Student&amp;gt;
+      &lt;/span&gt;
+      
+      | &lt;a href=&#x27;/000000000000000000000000000000000000000/editprofile.gtl&#x27;&gt;Profile&lt;/a&gt;
+      | &lt;a href=&#x27;/000000000000000000000000000000000000000/logout&#x27;&gt;Sign out&lt;/a&gt;
+      
+      
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;h2 class=&#x27;has-refresh&#x27; id=&quot;user_name&quot;&gt;
+
+
+  My Snippets
+  
+
+&lt;/h2&gt;
+&lt;div class=&#x27;refresh&#x27;&gt;&lt;a class=&#x27;button&#x27;
+  onclick=&#x27;_refreshSnippets(&quot;000000000000000000000000000000000000000&quot;, &quot;Student&quot;)&#x27;
+  href=&#x27;#&#x27;&gt;Refresh&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&#x27;content&#x27;&gt;
+
+
+
+
+  
+  
+    
+    
+      &lt;br&gt;
+      &lt;table&gt;
+        &lt;tr&gt;&lt;td colspan=&#x27;2&#x27;&gt;&lt;b&gt;All snippets:&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
+        
+          &lt;tr&gt;
+            &lt;td valign=&#x27;top&#x27;&gt;
+              &lt;script&gt;document.write(0 + 1)&lt;/script&gt;&amp;nbsp;&amp;nbsp;
+            &lt;/td&gt;
+            &lt;td valign=&#x27;top&#x27;&gt;
+              &lt;a href=&#x27;/000000000000000000000000000000000000000/deletesnippet?index=0&#x27;&gt;[X]&lt;/a&gt;&amp;nbsp;
+            &lt;/td&gt;
+            &lt;td valign=&#x27;top&#x27;&gt;
+              &lt;div id=&#x27;0&#x27;&gt;
+                HW8-CHECK
+              &lt;/div&gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+        
+          &lt;tr&gt;
+            &lt;td valign=&#x27;top&#x27;&gt;
+              &lt;script&gt;document.write(1 + 1)&lt;/script&gt;&amp;nbsp;&amp;nbsp;
+            &lt;/td&gt;
+            &lt;td valign=&#x27;top&#x27;&gt;
+              &lt;a href=&#x27;/000000000000000000000000000000000000000/deletesnippet?index=1&#x27;&gt;[X]&lt;/a&gt;&amp;nbsp;
+            &lt;/td&gt;
+            &lt;td valign=&#x27;top&#x27;&gt;
+              &lt;div id=&#x27;1&#x27;&gt;
+                HW8-BASE
+              &lt;/div&gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+        
+      &lt;/table&gt;
+    
+  
+  &lt;br&gt;
+  &lt;a href=&#x27;&#x27;&gt;My site&lt;/a&gt;
+
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></html>
